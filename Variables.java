@@ -4,7 +4,7 @@ public class Variables {
     static String college = "ABC College";
 
     // Instance variables
-    String name= "Rahul";
+    String name = "Rahul";
     int age;
 
     public static void main(String[] args) {
@@ -12,18 +12,37 @@ public class Variables {
         // Create object
         Variables s1 = new Variables();
 
-        // Instance variables
-
+        // Instance variable
         s1.age = 20;
 
         // Local variable
         double gpa = 8.5;
 
-        // Display values
-        System.out.println("College: " + Variables.college); //static access
+        // Primitive variables
+        byte b = 10;
+        short s = 1000;
+        int i = 50000;
+        long l = 100000L;
+        float f = 10.5f;
+        double d = 99.99;
+        char c = 'A';
+        boolean bool = true;
+
+        // Display previous variables
+        System.out.println("College: " + Variables.college); // Static access
         System.out.println("College: " + college);
-        System.out.println("Name: " + s1.name);              //instance access
+        System.out.println("Name: " + s1.name);              // Instance access
         System.out.println("Age: " + s1.age);
-        System.out.println("GPA: " + gpa);                   //local access
+        System.out.println("GPA: " + gpa);                   // Local access
+
+        // Display primitive variables with data type
+        System.out.println("byte: " + b);
+        System.out.println("short: " + s);
+        System.out.println("int: " + i);
+        System.out.println("long: " + l);
+        System.out.println("float: " + f);
+        System.out.println("double: " + d);
+        System.out.println("char: " + c);
+        System.out.println("boolean: " + bool);
     }
 }
